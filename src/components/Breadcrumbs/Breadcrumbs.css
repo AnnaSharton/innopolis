@@ -1,0 +1,11 @@
+.navigation {
+    margin-top: 100px;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    padding: 8px 0; 
+    gap: 4px;
+}
+.lastBreadcrumb {
+    display:none;
+}

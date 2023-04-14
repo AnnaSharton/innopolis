@@ -1,0 +1,31 @@
+.footer { 
+    max-width: 100%;
+    background: #F2F2F2;
+}
+
+.footer-inner {
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px;
+    font-size: 14px;
+}
+
+.footer-info__p {
+    margin: 0;
+}
+
+.footer-info__span {
+    color: #DA4A0C;
+}
+
+.footer-info__p_bold {
+    font-weight: 700;
+}
+
+.up-link {
+    font-size: 16px;
+}

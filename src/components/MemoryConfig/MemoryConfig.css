@@ -1,0 +1,28 @@
+.heading3 {
+    font-size: 16px; 
+    margin-top: 30px;
+}
+
+.memory-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+}
+
+.memory-btn__btn {
+    padding: 10px 20px;
+    border-radius: 4px; 
+    outline: 1px solid #888888; 
+    background: none;
+    border: none;
+}
+
+.memory-btn__btn:hover {
+    background: #F2F2F2;
+}
+
+.checked-btn {
+    outline: 2px solid #F36223; 
+}

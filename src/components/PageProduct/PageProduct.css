@@ -1,0 +1,347 @@
+html, body {
+    font-family: sans-serif; 
+    font-size: 16px; 
+    background: #F8FAFE;
+    margin: 0;
+} 
+
+*:focus {
+    outline:none;
+}
+
+.container {
+    margin: auto;  
+    max-width: 1400px;
+    padding: 0 50px;
+}
+
+.a:link {
+    color: #008CF0;
+    text-decoration: none;
+}
+
+.a:hover {
+    color: #F36223;
+}
+
+.a:active {
+    color: #A93A09;
+}
+
+.table__caracteristic {
+    border-collapse: collapse;
+    min-width: 876px;
+}
+
+.table__caracteristic, .table__head {
+    border: 1px solid #888888;
+}
+
+.table__data { 
+    border-right: 1px solid #888888;;
+}
+
+.table__data, .table__head {
+    padding: 10px;
+}
+
+.table__row_hovered:hover {
+    background-color: #F0F0F0;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/******************** Шапка сайта ПЕРЕНЕСЛА В КОМПОНЕНТ********************/
+
+/******************** Хлебные крошки ********************/
+/* .navigation {
+    margin-top: 100px;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    padding: 8px 0; 
+    gap: 4px;
+} */
+
+/******************** Фото товара ********************/  
+
+.block-photo__h2 {
+    font-size: 32px;
+}
+
+.iphone-blue-all-photo {
+    display: flex;
+    gap: 10px;
+}
+
+.iphone-blue__img {
+    max-height: 387px; 
+    max-width:100%;
+} 
+
+/******************** Главный контент ********************/  
+.main-info {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+/******************** Левый блок с описанием и отзывами ********************/  
+.main-side {
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.heading3 {
+    font-size: 16px; 
+    margin-top: 30px;
+}
+
+.caracteristic-ul__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 20px;
+    gap: 10px;
+    padding-left: 25px;
+    list-style-image: url("../../../public/marker.png");
+} 
+
+.caracteristic-text__p {
+    line-height: 19.36px;
+}
+
+/************ отзывы ***********/
+.all-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.head-reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.head-reviews-h3__h3, .head-reviews-span__span {
+    font-weight: 700;
+    font-size: 24px
+}
+
+.head-reviews-h3__h3_no-margin {
+    margin-top: 0;
+}
+
+.head-reviews-span__span{
+    color:#aaaaaa;
+}
+
+.btn-orange:hover {
+    background:  #DA4A0C;
+}
+
+.btn-orange:active {
+    background:  #A93A09;
+}
+/******************** Правый блок - Сайдбар ********************/ 
+.sidebar {
+    width: 420px;
+    margin-top: 30px;
+    flex-shrink: 0;
+}
+
+.price {
+    background-color: #ffffff; 
+    border: 1px solid #EEEEEE; 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.old-price {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 10px; 
+    justify-content: space-between;
+}
+
+.old-price-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.old-price-info__span {
+    color: #888888;
+}
+
+.old-price-info__btn {
+    color: #ffffff; 
+    background: #F36223; 
+    border-radius: 500px; 
+    padding: 4px 8px; 
+    border: 0; 
+    font-size: 16px; 
+}
+
+.old-price-heart {
+    visibility: visible;
+    background-position: center center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.old-price-heart-added {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../../../public/heart-hover.svg");
+    background-size: contain;
+}
+
+.heart-added { 
+    width: 30px;
+    padding-top: 2.8px; 
+}
+
+.old-price-heart::before {
+    content:"";
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../../../public/heart.svg");
+    background-size: contain;
+    display: inline-block;
+}
+
+.old-price-heart:hover::before {
+    content:"";
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../../../public/heart-hover.svg");
+    background-size: contain;
+    display: inline-block;
+} 
+
+.old-price-heart:active::before{
+    content:"";
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../../../public/heart-active.svg");
+    background-size: contain;
+    display: inline-block;
+} 
+ 
+.new-price {
+    font-size: 32px;
+}
+
+.delivery__span {
+    font-weight: 700;
+}
+
+.delivery {
+    margin-bottom: 35px;
+}
+
+.basket-add__btn {
+    background: #F36223; 
+    padding:  20px 49px; 
+    color: #ffffff; 
+    font-size: 20px; 
+    border-radius: 4px; 
+    border: 0;
+    display: flex;
+    gap: 15px;
+    align-items:center; 
+    width: 100%;
+}
+
+.basket-add__btn::before {
+    content:"";
+    background-image: url("../../../public/basket.svg");
+    height: 24px;
+    width: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advertise__span {
+    color: #888888; 
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.advertise-frame {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.advertise-frame__iframe {
+    box-sizing: border-box; 
+    border: 1px dashed #888888; 
+    width: auto;
+    border: 1px dashed #cccccc;
+    background: rgb(224, 222, 222);
+}
+
+@media (max-width: 1499px) {
+    .table {
+        display: none;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .review-img__img {
+        width: 100px;
+        height: 100px;
+    }
+    .rating-img__gold-star {
+        height: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-info {
+        gap: 40px;
+    }
+    .sidebar {
+        width: 360px;
+    }
+    .basket-add__btn {
+        padding: 20px 60px;
+    }
+}
+@media (max-width: 1300px) {
+    .form-inner {
+        padding-left: 0;
+    }
+    .form {
+         margin-left: 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    .form {
+        margin-left:  230px;
+    }
+}

@@ -1,0 +1,7 @@
+.rating-img {
+    display: inline-block;
+}
+
+.rating-img__gold-star {
+    height: 30px;
+}

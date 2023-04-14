@@ -1,0 +1,12 @@
+body {
+    background: #F0F0F0; 
+    margin: 0;
+}
+table {
+    width: 100%; 
+    height: 100vh;
+}
+td {
+    vertical-align:middle; 
+    text-align:center;
+}

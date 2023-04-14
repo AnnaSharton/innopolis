@@ -1,0 +1,25 @@
+.review {
+    display: flex;
+    gap: 30px;
+}
+
+.review:not(:last-child) {
+    border-bottom: 1px solid #888888;
+}
+
+.review-info__h4{
+    font-size: 20px;
+}
+
+.review-info__p {
+    font-size: 14px;
+}
+
+.review-hr {
+    margin: 0;
+    border: 1px dashed #888888;
+}
+
+.review-img__img {
+    border-radius: 50%;
+}
